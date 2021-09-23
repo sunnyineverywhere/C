@@ -1,19 +1,11 @@
 #include <stdio.h>
-#define N 3000000
 
-
-
-int main(void) {
-	int a[N];
-	int total;
-
-	for (int i = 0; i < N; i++) {
-		scanf_s("%d", &a[i]);
+// long long 큰 단위 숫자 표현
+long long sum(int* a, int n) {
+	long long ans = 0;
+	for (int i = 0; i < n; i++) {
+		ans += a[i];
 	}
-	for (int i = 0; i < N; i++) {
-		total += a[i];
-	}
-
-	printf("%d", total);
-
+	return ans;
+}
 }
