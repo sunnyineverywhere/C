@@ -13,8 +13,8 @@ int main(void) {
 	int A; int B;
 
 	for (int i = 0; i < T; i++) {
-		scanf_s("%d %d", &A, &B);
-		printf("%d", A * B / gcd(A, B));
+		scanf_s("%d %d", &A, &B);https://github.com/sunnyineverywhere/C/blob/main/BOJ1934.c
+		printf("%d\n", A * B / gcd(A, B));
 	}
 }
 
