@@ -11,10 +11,14 @@ int main(void) {
 	int t;
 	scanf("%d", &t);
 
-	int a, b;
-	for (int i = 1; i <= 5; i++) {
-		scanf("%d %d", &a, &b);
-		printf("Case #%d: %d\n", i, a + b);
+	numbers number[1000];
+	for (int i = 1; i <= t; i++) {
+		scanf("%d %d", &number[i].a, &number[i].b);
+		number[i].sum = number[i].a + number[i].b;
+	}
+	for (int i = 1; i <= t; i++) {
+
+		printf("Case #%d: %d\n", i, number[i].sum);
 	}
 
 	return 0;
